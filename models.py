@@ -12,9 +12,8 @@ from tagging.fields import TagField
 from django.contrib.flatpages.models import FlatPage
 from django.db.models.signals import post_save, post_delete
 from django.db.models import signals
-#from staticgenerator import quick_delete
 from django.contrib.comments.models import Comment
-from blog import signals
+from jot import signals
 
 
 class Category(models.Model):

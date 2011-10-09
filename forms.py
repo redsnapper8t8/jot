@@ -1,6 +1,6 @@
 from django import forms
 from django.db.models import get_model
-from blog.widgets import WYMEditor, BasicWYMEditor
+from widgets import WYMEditor, BasicWYMEditor
 
 class EntryAdminModelForm(forms.ModelForm):
     body = forms.CharField(widget=WYMEditor())
