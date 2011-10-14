@@ -48,7 +48,7 @@ urlpatterns += patterns('',
 
    (r'^tag/(?P<tag>[^/]+(?u))/$','tagging.views.tagged_object_list', 
 	dict(queryset_or_model=Entry.live.all(), 
-	template_name='blog/entry_tag_list.html')),
+	template_name='jot/entry_tag_list.html')),
 )
 
 
