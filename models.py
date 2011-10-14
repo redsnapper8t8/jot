@@ -87,7 +87,7 @@ class Entry(models.Model):
         return self.headline
 
     def get_absolute_url(self):
-        return "/weblog/%s/%s/" % (self.pub_date.strftime("%Y/%b/%d").lower(), self.slug)
+        return "/blog/%s/%s/" % (self.pub_date.strftime("%Y/%b/%d").lower(), self.slug)
 
     def save(self):
         self.updated_date = datetime.datetime.today()
@@ -107,7 +107,7 @@ class Link(models.Model):
     enable_comments = models.BooleanField(default=True)
     post_elsewhere = models.BooleanField('Post to Delicious',
                                          default=True,
-                                         help_text='If checked, this link will be posted both to your weblog and your del.icio.us account.')
+                                         help_text='If checked, this link will be posted both to your blog and your del.icio.us account.')
     posted_by = models.ForeignKey(User)
     pub_date = models.DateTimeField(default=datetime.datetime.now)
     slug = models.SlugField(unique_for_date='pub_date',
