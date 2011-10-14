@@ -2,8 +2,8 @@ import datetime
 
 from django.contrib import admin
 
-from blog.models import Entry, Category, Link
-from blog.forms import EntryAdminModelForm, LinkAdminModelForm, CategoryAdminModelForm
+from models import Entry, Category, Link
+from forms import EntryAdminModelForm, LinkAdminModelForm, CategoryAdminModelForm
 
 
 class Media:

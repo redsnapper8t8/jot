@@ -1,6 +1,6 @@
 import datetime
 from django import template
-from blog.models import Entry
+from jot.models import Entry
 #from zeus.apps.blog.models import Category
 
 register = template.Library()

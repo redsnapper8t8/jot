@@ -3,7 +3,7 @@ from django.views.generic.list_detail import object_list
 from django.shortcuts import render_to_response
 
 
-from blog.models import Category
+from jot.models import Category
 
 
 def category_detail(request, slug):
